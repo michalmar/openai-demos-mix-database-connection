@@ -3,7 +3,7 @@
 This repository contains a sample Azure Functions project that demonstrates how to manage products using HTTP triggers and SQL bindings.
 
 ## Project Structure
-
+```
 . 
 ├── .funcignore 
 ├── .gitignore 
@@ -18,7 +18,7 @@ This repository contains a sample Azure Functions project that demonstrates how 
 ├── local.settings.json 
 ├── README.md 
 ├── requirements.txt
-
+```
 
 ### Files
 
@@ -53,18 +53,19 @@ def get_products(req: func.HttpRequest, products: func.SqlRowList) -> func.HttpR
         mimetype="application/json"
     )
 
+```
 
 ## Setup
 1. Install Dependencies: Ensure you have Python and pip installed. Run the following command to install the required packages:
 
-```
+```shell
 pip install -r requirements.txt
 ```
 1. Configure Local Settings: Update local.settings.json with your SQL connection string and other necessary settings.
 
 1. Run the Function App: Use the following command to start the function app locally:
 
-```
+```shell
 func start
 ```
 
